@@ -1,0 +1,44 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+"logo": {
+    "type": "kitty-direct", // Communicates directly with Kitty's engine
+    "source": "~/.config/fastfetch/my_logo.png",
+    "width":38,
+    "height": 16,                      // The target height. Adjust this to compress it vertically
+    "padding": {
+      "right": 3,                      // Breathing room before system info metrics begin
+      "left": 1
+    }
+},
+  "modules": [
+    "title",
+    "separator",
+    "os",
+    "host",
+    "kernel",
+    "uptime",
+    "packages",
+    "shell",
+    "display",
+    "de",
+    "wm",
+    "wmtheme",
+    "theme",
+    "icons",
+    "font",
+    "cursor",
+    "terminal",
+    "terminalfont",
+    "cpu",
+    "gpu",
+    "memory",
+    "swap",
+    "disk",
+    "localip",
+    "battery",
+    "poweradapter",
+    "locale",
+    "break",
+    "colors"
+  ]
+}

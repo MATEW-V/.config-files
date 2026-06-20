@@ -1,0 +1,11 @@
+/*
+!.gitignore
+
+# Safe to show on git
+!/kitty/
+!/waybar/
+!/btop/
+!/fastfetch/
+!/wofi/
+!/wlogout/
+!/hypr/

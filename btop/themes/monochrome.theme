@@ -1,0 +1,56 @@
+# Theme: Monochrome Shades
+# Author: Custom
+
+# Main background and text
+theme[main_bg]="#000000"
+theme[main_fg]="#e0e0e0"
+
+# Title boxes and borders
+theme[title]="#ffffff"
+theme[hi_fg]="#ffffff"
+theme[selected_bg]="#303030"
+theme[selected_fg]="#ffffff"
+theme[inactive_fg]="#505050"
+theme[graph_text]="#a0a0a0"
+
+# Meter outlines and frame lines
+theme[div_line]="#404040"
+
+# Graphs and Gauges (Shades of Gray from Low to High usage)
+theme[cpu_box]="#707070"
+theme[mem_box]="#707070"
+theme[net_box]="#707070"
+theme[proc_box]="#707070"
+
+# Gradient meters (Low -> Mid -> High)
+theme[temp_start]="#606060"
+theme[temp_mid]="#a0a0a0"
+theme[temp_end]="#ffffff"
+
+theme[cpu_start]="#404040"
+theme[cpu_mid]="#888888"
+theme[cpu_end]="#ffffff"
+
+theme[free_start]="#404040"
+theme[free_mid]="#888888"
+theme[free_end]="#ffffff"
+
+theme[cached_start]="#404040"
+theme[cached_mid]="#888888"
+theme[cached_end]="#ffffff"
+
+theme[available_start]="#404040"
+theme[available_mid]="#888888"
+theme[available_end]="#ffffff"
+
+theme[used_start]="#404040"
+theme[used_mid]="#888888"
+theme[used_end]="#ffffff"
+
+theme[download_start]="#404040"
+theme[download_mid]="#888888"
+theme[download_end]="#ffffff"
+
+theme[upload_start]="#404040"
+theme[upload_mid]="#888888"
+theme[upload_end]="#ffffff"

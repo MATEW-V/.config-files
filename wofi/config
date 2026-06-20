@@ -1,0 +1,7 @@
+width=35%            # Wider than default (was 35%)
+height=40%           # Smaller overall (was 40%)
+lines=8             # Show fewer entries = smaller height
+hide_scroll=true     # Cleaner look
+allow_images=false   # Minimal - removes icons, pure text
+show_icons=false	# magnify glass search remove
+insensitive=true     # Case-insensitive search
