@@ -1,0 +1,223 @@
+/**
+* @name Pure Black Glass - Backgrounds Only
+* @version 1.0.0
+*/
+
+
+/* ============================================
+  SECTION 0: REMOVE DISCORD'S SOLID BACKGROUNDS
+  ============================================ */
+html,
+body,
+#app-mount,
+[class*="app_"],
+[class*="bg_"],
+[class*="layers_"],
+[class*="layer_"],
+[class*="base_"],
+[class*="baseLayer_"] {
+   background: transparent !important;
+   background-color: transparent !important;
+   background-image: none !important;
+}
+
+
+/* ============================================
+  SECTION 1: MAIN APP BACKGROUND (GLASS)
+  ============================================ */
+#app-mount,
+[class*="layers_"] {
+   background: rgba(0, 0, 0, 0.4) !important;
+   background-color: rgba(0, 0, 0, 0.4) !important;
+   backdrop-filter: blur(20px) !important;
+   -webkit-backdrop-filter: blur(20px) !important;
+}
+
+
+/* ============================================
+  SECTION 2: ALL TRANSPARENT ELEMENTS (BUNCHED TOGETHER)
+  ============================================ */
+
+/* Channel List */
+[class*="sidebar_"],
+.container__2637a,
+[class*="sidebar_"] [class*="scroller_"],
+[class*="sidebar_"] [class*="containerDefault_"],
+[class*="sidebar_"] [class*="link_"],
+[class*="sidebar_"] [class*="channel_"],
+[class*="sidebar_"] [class*="wrapper_"],
+[class*="sidebar_"] [class*="content_"],
+[class*="sidebar_"] [class*="header_"],
+[class*="sidebar_"] [class*="children_"],
+[class*="sidebar_"] [class*="category_"],
+
+/* Channel Header */
+[class*="header_f37cb1"],
+[class*="headerContent_f37cb1"],
+[class*="container_f37cb1"],
+
+/* Channel Categories */
+[class*="containerDefault__29444"],
+[class*="wrapper__29444"],
+[class*="mainContent__29444"],
+
+/* Channel Items */
+[class*="containerDefault_c69b6d"],
+[class*="wrapper__2ea32"],
+[class*="link__2ea32"],
+[class*="content__65844"],
+
+
+/* Private Channels */
+[class*="privateChannels_"],
+[class*="privateChannels_"] [class*="channel_"],
+[class*="privateChannels_"] [class*="scroller_"],
+
+/* Chat Area */
+[class*="chat_"],
+[class*="chatContent_"],
+[class*="messagesWrapper_"],
+[class*="chat_"] [class*="scroller_"],
+[class*="chat_"] [class*="container_"],
+
+/* Chat Title Bar */
+.title_f75fb0,
+
+/* Member List */
+[class*="membersWrap_"],
+[class*="members_"],
+[class*="members_"] [class*="scroller_"],
+[class*="members_"] [class*="container_"],
+[class*="membersWrap_"] [class*="scroller_"],
+[class*="member_"],
+[class*="member__5d473"],
+.member_c8ffbb,
+[class*="membersGroup_"],
+
+/* Friends Tab */
+[class*="peopleColumn_"],
+[class*="nowPlayingColumn_"],
+[class*="tabBody_"],
+[class*="container__133bf"],
+[class*="peopleList_"] [class*="scroller_"],
+[class*="peopleList_"] [class*="container_"],
+.container__9293f.themed__9293f,
+.upperContainer__9293f,
+.children__9293f.scrollable__9293f,
+.titleWrapper__9293f,
+.tabBar__133bf,
+.toolbar__9293f,
+.item__133bf,
+.addFriend__133bf,
+
+/* Search Bar */
+[class*="searchBar_"],
+[class*="searchBarComponent_"] {
+   background: transparent !important;
+   background-color: transparent !important;
+   backdrop-filter: none !important;
+   -webkit-backdrop-filter: none !important;
+   border: none !important;
+}
+
+/* ============================================
+  SECTION 3: ELEMENTS WITH OPACITY (GLASS)
+  ============================================ */
+
+/* User Panel - subtle glass */
+[class*="panels_"] {
+   background: rgba(0, 0, 0, 0.3) !important;
+   background-color: rgba(100, 100, 100, 0.6) !important;
+}
+[class*="panels_"] [class*="container_"],
+[class*="panels_"] [class*="wrapper_"] {
+   background: transparent !important;
+   background-color: transparent !important;
+}
+
+/* Chat Bar - subtle glass */
+[class*="channelTextArea_"],
+[class*="scrollableContainer_"] {
+   background: rgba(255, 255, 255, 0.1) !important;
+   background-color: rgba(180, 180, 180, 0.1) !important;
+   backdrop-filter: none !important;
+   -webkit-backdrop-filter: none !important;
+   border-radius: 8px !important;
+   border: none !important;
+}
+[class*="channelTextArea_"] [class*="inner_"],
+[class*="scrollableContainer_"] [class*="inner_"] {
+   background: transparent !important;
+   background-color: transparent !important;
+}
+
+/* Selected Friends Tab */
+.item__133bf.selected_aa8da2 {
+   background: rgba(255, 255, 255, 0.08) !important;
+   background-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+
+/* ============================================
+  SECTION 4: REMOVE GRADIENT OVERLAYS
+  ============================================ */
+.sidebar__5e434::after {
+   display: none !important;
+   content: none !important;
+   background: transparent !important;
+   background-image: none !important;
+}
+.children__9293f::after {
+   display: none !important;
+   content: none !important;
+   background: transparent !important;
+   background-image: none !important;
+}
+[class*="chatGradient"] {
+   display: none !important;
+   background: transparent !important;
+   background-image: none !important;
+}
+
+
+/* ============================================
+  SECTION 5: HARDCODE NOTIFICATIONS & LIVE RED
+  ============================================ */
+
+/* Notification badges */
+[class*="numberBadge_"],
+[class*="unreadPill_"] {
+   background: #ed4245 !important;
+   background-color: #ed4245 !important;
+   color: #ffffff !important;
+}
+/* LIVE badge */
+[class*="live_"],
+[class*="liveBadge_"],
+[class*="liveIndicator_"],
+[class*="isLive_"],
+[class*="live"]:not([class*="liveIcon"]):not([class*="liveText"]) {
+   background: #ed4245 !important;
+   background-color: #ed4245 !important;
+   color: #ffffff !important;
+   border-color: #ed4245 !important;
+}
+
+/* LIVE icon inside badge */
+[class*="liveIcon_"] {
+   color: #ffffff !important;
+   fill: #ffffff !important;
+}
+
+/* LIVE text inside badge */
+[class*="liveText_"],
+[class*="liveLabel_"] {
+   color: #ffffff !important;
+}
+
+/* Voice channel LIVE indicator */
+[class*="voiceUser_"] [class*="live"] {
+   background: #ed4245 !important;
+   background-color: #ed4245 !important;
+   color: #ffffff !important;
+}

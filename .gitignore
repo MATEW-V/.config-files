@@ -9,4 +9,6 @@
 !/wofi/
 !/wlogout/
 !/hypr/
-!/Vencord/settings/quickCss.css
+!/Vencord/
+/Vencord/*
+!/Vencord/settings/
