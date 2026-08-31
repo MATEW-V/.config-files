@@ -9,8 +9,8 @@ window#waybar {
 }
 
 .modules-left, .modules-center, .modules-right {
-    background: rgba(0, 0, 0, 0.70);
-    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.72);
+    border-radius: 12px;
     padding: 0 3px;
     margin: 1px 0;
 }
@@ -36,4 +36,8 @@ window#waybar {
     padding: 0 1px;
     font-size: 10px;
     color: #ffffff; 
+}
+
+#custom-macro {
+    font-size: 12px;
 }

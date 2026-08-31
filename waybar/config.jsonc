@@ -25,6 +25,7 @@
 "modules-right": [
     "custom/separator#blank",
     "tray",
+    "custom/macro",
     "custom/separator#dot-line",  
     "cpu",
     "custom/separator#blank",
@@ -134,15 +135,15 @@
             }
         }
     }, 
-
     "temperature": {
     "interval": 5,
-    "thermal-zone": 0,
+    "hwmon-path-abs": "/sys/devices/platform/coretemp.0/hwmon",
+    "input-filename": "temp1_input",
     "critical-threshold": 82,
-    "format-critical": "<span color='#ff5555'>⚠ {temperatureC}°C</span>",
-    "format": "󰈸 {temperatureC}°C",
+    "format-critical": "<span color='#ff5555'>   {temperatureC}°C</span>",
+    "format": "{temperatureC}°C",
     "tooltip": true
-    }, 
+    },
     "cpu": {
     "format": "CPU: {usage}%",
     "interval": 3
@@ -158,6 +159,13 @@
     "format-muted": "󰖁",
     "format-icons": ["", "", "󰕾", ""],
     "tooltip-format": "Volume: {volume}%"
-    }
+    },
+    "custom/macro": {
+    "exec": "if [ -f /tmp/macro_running ]; then echo 'DW'; else echo ''; fi",
+    "interval": 2,
+    "signal": 8,
+    "on-click": "~/.config/hypr/scripts/macro_tray.sh",
+    "tooltip": false
+},
 }
 

@@ -1,4 +1,4 @@
-width=35%            # Wider than default (was 35%)
+width=30%            # Wider than default (was 35%)
 height=40%           # Smaller overall (was 40%)
 lines=8             # Show fewer entries = smaller height
 hide_scroll=true     # Cleaner look
