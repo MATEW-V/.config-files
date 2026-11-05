@@ -1,7 +1,7 @@
 {
     "autoUpdate": true,
     "autoUpdateNotification": true,
-    "useQuickCss": true,
+    "useQuickCss": false,
     "themeLinks": [],
     "eagerPatches": false,
     "enabledThemes": [],
@@ -159,9 +159,6 @@
         "Experiments": {
             "enabled": false
         },
-        "ExpressionCloner": {
-            "enabled": false
-        },
         "F8Break": {
             "enabled": false
         },
@@ -272,9 +269,9 @@
             "enabled": false
         },
         "MessageLogger": {
-            "enabled": true,
-            "collapseDeleted": false,
-            "ignoreBots": false,
+            "enabled": false,
+            "collapseDeleted": true,
+            "ignoreBots": true,
             "ignoreSelf": false,
             "ignoreUsers": "",
             "ignoreChannels": "",
@@ -282,7 +279,8 @@
             "logEdits": true,
             "logDeletes": true,
             "deleteStyle": "text",
-            "inlineEdits": true
+            "inlineEdits": true,
+            "logDeletedAttachments": true
         },
         "MoreQuickReactions": {
             "enabled": false
@@ -597,14 +595,23 @@
         "MusicRichPresence": {
             "enabled": false
         },
-        "TenorGifSearch": {
-            "enabled": false
-        },
         "ContextMenuAPI": {
             "enabled": true
         },
         "NoticesAPI": {
             "enabled": true
+        },
+        "GifProviderSwitcher": {
+            "enabled": false
+        },
+        "AddAttachments": {
+            "enabled": false
+        },
+        "FixDiscordCss": {
+            "enabled": true
+        },
+        "ExpressionManager": {
+            "enabled": false
         }
     },
     "uiElements": {
@@ -621,6 +628,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1786715660673
-    }
+        "settingsSyncVersion": 1793412909958
+    },
+    "nativeTitleBar": false
 }
