@@ -26,6 +26,7 @@
     "custom/separator#blank",
     "tray",
     "custom/macro",
+    "custom/studybot",
     "custom/separator#dot-line",  
     "cpu",
     "custom/separator#blank",
@@ -166,6 +167,13 @@
     "signal": 8,
     "on-click": "~/.config/hypr/scripts/macro_tray.sh",
     "tooltip": false
-},
+    },
+    "custom/studybot": {
+    "exec": "echo 'SB'",
+    "exec-if": "pgrep -f '/home/matew/GITHUB/matewbot/v2/[b]ot.py'",
+    "interval": 3,
+    "tooltip": false,
+    "on-click": "pkill -f '/home/matew/GITHUB/matewbot/v2/[b]ot.py'"
+    },
 }
 

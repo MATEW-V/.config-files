@@ -38,6 +38,6 @@ window#waybar {
     color: #ffffff; 
 }
 
-#custom-macro {
+#custom-macro, #custom-studybot {
     font-size: 12px;
 }
